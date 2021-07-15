@@ -41,11 +41,8 @@ h3{
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-@media screen and (max-width: 450px) {
-    body{
-      width: 100%;
-    }
-    h1{
-        font: 600 2.5em 'Raleway', sans-serif;
-    }
-  }
+@media only screen and (min-width: 414px) 
+    and (max-width: 736px){ 
+        width: 100%;
+}
+
