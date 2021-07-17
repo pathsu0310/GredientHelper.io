@@ -41,8 +41,24 @@ h3{
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-@media only screen and (min-width: 414px) 
-    and (max-width: 736px){ 
-        width: 100%;
-}
+@media only screen /*iPhone X*/
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3),
+    screen /*iPhone 11*/
+    and (min-device-width : 414px) 
+    and (max-device-height : 896px) 
+    and (-webkit-device-pixel-ratio : 2) { 
+        body{
+            width: 100%;
+        }
+        h1{
+            font: 600 1.5em 'Raleway', sans-serif;
+            width: 100%;
+        }
+        h3{
+            font: 900 .5em 'Raleway',sans-serif;
+            width: 100%;
+        }
+    }
 
