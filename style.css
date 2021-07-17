@@ -45,10 +45,7 @@ h3{
     and (device-width : 375px) 
     and (device-height : 812px) 
     and (-webkit-device-pixel-ratio : 3),
-    screen /*iPhone 11*/
-    and (min-device-width : 414px) 
-    and (max-device-height : 896px) 
-    and (-webkit-device-pixel-ratio : 2) { 
+     { 
         body{
             width: 100%;
         }
@@ -61,4 +58,19 @@ h3{
             width: 100%;
         }
     }
-
+@media only screen /*iPhone 11*/
+    and (min-device-width : 414px) 
+    and (max-device-height : 896px) 
+    and (-webkit-device-pixel-ratio : 2){
+  body{
+            width: 100%;
+        }
+        h1{
+            font: 600 1.5em 'Raleway', sans-serif;
+            width: 100%;
+        }
+        h3{
+            font: 900 .5em 'Raleway',sans-serif;
+            width: 100%;
+        }
+}
